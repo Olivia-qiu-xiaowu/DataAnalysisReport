@@ -11,4 +11,4 @@ Since they are written in Chinese, the upload precess is relatively slow.
   - First simple check in Excel, analyze the relationship between each variable.
   - Curve fitting and regression analysis.
 
-### Federal Reserve Interest Rate Hike and Cut Forecast Model:
+### Medium-term Lending Facility(MLF) Rate Alert Model:
