@@ -23,6 +23,18 @@ This article mainly summary the differences between principal component analysis
 ## Reasons why factor analysis cannot be used
 In rebar, WanD-A index and governement bond yields case, the sample size is samll. There are no common factors, the data is not representative. In Comparsion, PCA is more comprehensive.  
 Figure 1.1 shows that each variable has a certain proportion in the pricipal components analysis whis us reoresentative.   
-![Figure 1.1: Precentage of each variable's contribution in PCA]()
+![Figure 1.1: Precentage of each variable's contribution in PCA](PCA.png)<br/>Figure 1.1: Precentage of each variable's contribution in PCA  
+![Figure 1.2: Factor precentage in FA](FA.png)<br/>   Figure 1.2:Factor precentage in FA  
 
+
+Before performing factor analysis, you can also check the KMO(Kaiser-Meyer-Olkin) measure to access the correlation between variables and determine whether factor analysis is appropriate.<br/>
+```
+install.packages("psych")  
+library(psych)  
+KMO(var)
+```
+![Figure 1.3: KMO](KMO.png)
+
+Form the example of the Shanghai SStock Exchange, Shenzhen Stock Exchange, and ChiNext， it can be seen that when both PCA and FA are applicable, the factor scores derived from the factor analysis and the trend chart obtained from the principal components show a high degree of overlap. Therefore, both method can be used simultaneously for comparison.<br/>
+![Figure 1.4: PCA and FA](both.png)
 
