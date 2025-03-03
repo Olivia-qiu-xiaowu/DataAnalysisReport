@@ -10,6 +10,6 @@ Since they are written in Chinese, the upload precess is relatively slow.
 ### Logistic Regressions and Multiple Linear Regression Model:
   - First simple check in Excel, analyze the relationship between each variable.
   - Curve fitting and regression analysis.
-  - [Detail](RegressionsModel)
+  - [Detail](https://github.com/Olivia-qiu-xiaowu/DataAnalysisReport/tree/41f11ff059c9374617c898621cf57bc91b8dd126/RegressionsModel)
 
 ### Medium-term Lending Facility(MLF) Rate Alert Model:
