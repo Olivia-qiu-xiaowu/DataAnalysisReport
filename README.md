@@ -5,10 +5,11 @@ Since they are written in Chinese, the upload precess is relatively slow.
 >Notice: For certain reasons, no data document will be shared for this project. 
 
 ### Summary Report:  
-   [Summary of Principal Component Analysis(PCA) and Factor Analysis(FA)](https://github.com/Olivia-qiu-xiaowu/DataAnalysisReport/blob/main/PCA%20and%20FA.md)
+   [Summary of Principal Component Analysis(PCA) and Factor Analysis(FA)](https://github.com/Olivia-qiu-xiaowu/DataAnalysisReport/tree/df97e37f133e546213a104da9d8e7621df790bce/PCA%20%26%20FA)
   
 ### Logistic Regressions and Multiple Linear Regression Model:
   - First simple check in Excel, analyze the relationship between each variable.
   - Curve fitting and regression analysis.
+  - [Detail](RegressionsModel)
 
 ### Medium-term Lending Facility(MLF) Rate Alert Model:
