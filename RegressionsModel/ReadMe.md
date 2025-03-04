@@ -73,6 +73,7 @@ $PMI = 0.184 EPMI Production Volume + 0.104 EPMI Imports - 0.169 EPMI  Employmen
 
 <br/>
 ## Logistic Regreesion Model
+
 | Model | Model 1 | Model 2 | Model 3| Model 4 | Testing Data|
 | --- | --- | --- | --- | --- | --- |
 | Time line | 2018-2022 | 2019-2022 | 2020-2022 | 2021-2022 | 2023|
