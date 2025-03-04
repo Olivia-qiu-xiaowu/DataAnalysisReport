@@ -15,6 +15,9 @@ To observe whether the trend of PMI decline or increase is influenced by industr
 - Overall:<br/>
   The probability of PMI and all three indicators rising simultaneously is 63.6%, while the probability of PMI and all three indicators declining simultaneously is 92.3%.<br/>
 
+- For the Model Fitting:<br/>
+  The Logistic Regression model achieves a prediction accuracy of 72.7%, while the multiple Linear Regression model has a higher accuracy of 90.9%. The multiple linear regression model primrily relies on EPMI production colume, EPMI imports and EPMIemployment as key factors.
+
 - From the perspective of EPMI sub-items:<br/>
   The actual EPMI trend aligns with the cumulative direction of its sub-components, with EPMI production volume and EPMI product orders being the primary contributors, followed by imports and employment. Over the past two years, the proportion of product orders has gradually increased. The actual EPMI and PMI trends mostly correspond to production volume, while other sub-components influence the overall trend in proportion.
   
@@ -45,5 +48,49 @@ Based on the observations, EPMI production volume and product orders have a sign
 <br/>
 The trend of EPMI procurement pricies shows a large difference from the actual EPMI trend, with an accuracy of only 48.6%. Additionally, data is missing for the past 8 months, so this indicator can be excluded. The focus should be on observing EPMI and PMI production volume and product orders.
 
+## Multiple Linear Regression Model
+| Model | Model 1 | Model 2 | Model 3| Model 4 | Testing Data|
+| --- | --- | --- | --- | --- | --- |
+| Time line | 2018-2022 | 2019-2022 | 2020-2022 | 2021-2022 | 2023|
+
+- Model 1(2018-2022): According to PMI trend in 2023, the model 1 correct predictions 9 times, with a probability of 81.8%
+  ![img](Img/2018-2022-M.png)<br/>
+- Model 2(2019-2022): According to PMI trend in 2023, the model 2 correct predictions 10 times, with a probability of 90.9%.
+  ![img](Img/2019-2022-M.png)<br/>
+- The prediction accuracy of Model 3 is the same as Model 2, and the prediction accuracy of Model 4 is the same as Model 1.
+- The regression coefficients of Model 2 represent the paramaters indicating the impact of variables on PMI:
+  ![img](Img/Gruadual-R-M.png)
+By observing the regression coefficients, it can be seen that some variables have a minimal impact on PMI. However, including these variables increases the residuals will affect the accuracy of model. Therefore, the ```step()``` function is used to perform stepwise regression, eliminating variables with little impact and identifying the optimal regression equation.
+
+#### Stepwise Regression:
+Stepwise regression retains only the three variables with the highest contribution rates. Using these three variables and data from 2019 to 2022, a new model is constructed leading to the following results:<br/>
+![img](Img/Estimate-M.png)<br/>
+**Correct predictions 10 times, with a probability of 90.9%.**
+</br>
+<br/>
+The regreesion equation of the new model is:
+$PMI = 0.184 EPMI Production Volume + 0.104 EPMI Imports - 0.169 EPMI  Employment- 0.00588$
+
+<br/>
+## Logistic Regreesion Model
+| Model | Model 1 | Model 2 | Model 3| Model 4 | Testing Data|
+| --- | --- | --- | --- | --- | --- |
+| Time line | 2018-2022 | 2019-2022 | 2020-2022 | 2021-2022 | 2023|
+
+Among the four models, Model 4(2021-2022) has the lowest Akaike Information Criterion(AIC), indicating that the model fitted with 2021-2022 data has the best fit. It correctly predicted 8 times, with a probability of 72.7%.
+![img](Img/L.png)<br/>
+
+#### Stepwise Regression:
+![img](Img/Gruadual-R-L.png)<br/>
+
+
+## The final regreesion equation is:
+$PMI = -0.09 IndustrialPCA - 17.09 EPMI - 10.57 measuedPMI + 8.81 EPMI Production + 6.89 EPMI Production Volume - 3.52 Epmi Imports + 15.36 EPMI Employment - 0.77$<br/>
+</br>
+According the PMI trend in 2023, the correct prediction 8 times, with a probability of 72.7%.
+|   | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | 
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Actully | up | up | down | down | down | up | up | up | up | down | down |
+| Predict | up | up | down | down | down | down | down | down | up | down | down |
 
 
