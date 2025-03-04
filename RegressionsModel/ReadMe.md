@@ -88,8 +88,8 @@ Among the four models, Model 4(2021-2022) has the lowest Akaike Information Crit
 $PMI = -0.09 IndustrialPCA - 17.09 EPMI - 10.57 measuedPMI + 8.81 EPMI Production + 6.89 EPMI Production Volume - 3.52 Epmi Imports + 15.36 EPMI Employment - 0.77$<br/>
 </br>
 According the PMI trend in 2023, the correct prediction 8 times, with a probability of 72.7%.
-|   | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | 
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|   | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Actully | up | up | down | down | down | up | up | up | up | down | down |
 | Predict | up | up | down | down | down | down | down | down | up | down | down |
 
