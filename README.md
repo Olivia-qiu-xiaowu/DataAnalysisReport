@@ -13,4 +13,4 @@ Since they are written in Chinese, the upload precess is relatively slow.
   - [Detail](RegressionsModel/ReadMe.md)
 
 ### Interest Rate Cut Prediction Alert Model:
-[Detail](MLFRateAlert)
+[Detail](InterestRatePerdiction)
