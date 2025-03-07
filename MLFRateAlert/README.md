@@ -1,4 +1,4 @@
-# Medium-term Lending Facility(MLF) Rate Alert Model:
+# Interest Rate Cut Prediction Alert Model:
 
 The "Rule of Thumb" model is an interest rate cut warning model based on intuitive logic and objective data. According to the model, the "Rule of Thumb" exhibits quantifiability, 
 ease of understanding, relative objectivity, and high adaptability. However, based on backtesting data, its accuracy requires further observation. This study primarily reconstructs the interest 
