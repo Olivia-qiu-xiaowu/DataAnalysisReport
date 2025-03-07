@@ -1,7 +1,6 @@
 # Data analysis Report
 I will present some of my previous research report and programs. 
-Since they are written in Chinese, the upload precess is relatively slow.  
->[!NOTE]
+
 >Notice: For certain reasons, no data document will be shared for this project. 
 
 ### Summary Report:  
