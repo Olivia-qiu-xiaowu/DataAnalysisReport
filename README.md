@@ -12,4 +12,5 @@ Since they are written in Chinese, the upload precess is relatively slow.
   - Curve fitting and regression analysis.
   - [Detail](RegressionsModel/ReadMe.md)
 
-### Medium-term Lending Facility(MLF) Rate Alert Model:
+### Interest Rate Cut Prediction Alert Model:
+[Detail](MLFRateAlert)
